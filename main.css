@@ -211,11 +211,11 @@ article.projects div
 
 @media (orientation: landscape)
 {
-    h2{font-size: calc(10px + 1.5vw);} h3{font-size: calc(10px + 1vw);}
-    div > span, ul, ul li{font-size: calc(10px + 0.75vw); height: fit-content;}
-    h1 { font-size: (10px + 1.75vw);  width: fit-content; height: fit-content; box-shadow: black 0.5vw 0.5vw;}
-    .pages_links{button {width: 55%; height: 35%; box-shadow: black 1vh 1vh; span{font-size: calc(10px + 2.25vw);}}}
-    .bubble{top: 17.5vh; width: calc(10px + 6.25vw); height: calc(10px + 6.25vw); h2{font-size: calc(10px + 4vw); text-shadow: black 0 -0.25vw;} }
+    h2{font-size: calc(5px + 1.75vw);} h3{font-size: calc(5px + 1.25vw);}
+    div > span, ul, ul li{font-size: calc(5px + 1vw); height: fit-content;}
+    h1 { font-size: (5px + 2vw);  width: fit-content; height: fit-content; box-shadow: black 0.5vw 0.5vw;}
+    .pages_links{button {width: 55%; height: 35%; box-shadow: black 1vh 1vh; span{font-size: calc(5px + 2.5vw);}}}
+    .bubble{top: 17.5vh; width: calc(5px + 6.5vw); height: calc(5px + 6.5vw); h2{font-size: calc(5px + 4.25vw); text-shadow: black 0 -0.25vw;} }
 
     .footer
     {
@@ -248,7 +248,7 @@ article.projects div
         width: fit-content; height: fit-content; position: absolute; bottom: 30vh; box-shadow: black 0.5vw 0.5vw; transform: skewX(0deg);
         span{font-size: 2vw; transform: skewX(0deg);}
     }
-    .desc > p {margin-left:15vw; margin-right:15vw; font-size: calc(10px + 1vw);}
+    .desc > p {margin-left:15vw; margin-right:15vw; font-size: calc(5px + 1vw);}
 
     .competences_box
     {
