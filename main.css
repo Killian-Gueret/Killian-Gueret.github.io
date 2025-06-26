@@ -84,14 +84,14 @@ h2, h3
 {
     position: absolute;
     left : 0 ; top: 0 ; bottom: 0 ; right: 0 ; margin: auto ;
-    width : 100vw ; height: 40vh; display: grid; grid-template-rows: 1fr 1fr; grid-template-columns: 1fr 1fr;
+    width : 100vw ; height: 40dvh; display: grid; grid-template-rows: 1fr 1fr; grid-template-columns: 1fr 1fr;
     justify-items: center; align-items: center;
 }
 
 /*P/ - About page */
 
 .left_title { right: 0; position: absolute;}
-.desc {position: absolute; left : 0 ; top: 0 ; bottom: 10vh ; right: 0 ; margin: auto; width: fit-content; height: fit-content;}
+.desc {position: absolute; left : 0 ; top: 0 ; bottom: 10dvh ; right: 0 ; margin: auto; width: fit-content; height: fit-content;}
 .desc > p {color: var(--primary-background); font-family: "Zilla Slab"; font-weight: 800; background-color: var(--primary-font); width: fit-content; height: fit-content;}
 .desc > p:nth-child(2n) {text-align: right;}
 
@@ -151,62 +151,62 @@ article.projects div
 
 @media (orientation: portrait)
 {
-    h1{font-size: 3vh;}h2{font-size: 2.75vh;}h3{font-size: 2.25vh;}
-    div > span, ul, ul li{font-size: 2vh;}
-    h1, h2:not(div h2), h3:not(article h3){ width: fit-content; height: fit-content; box-shadow: black 0.5vh 0.5vh;}
+    h1{font-size: 3dvh;}h2{font-size: 2.75dvh;}h3{font-size: 2.25dvh;}
+    div > span, ul, ul li{font-size: 2dvh;}
+    h1, h2:not(div h2), h3:not(article h3){ width: fit-content; height: fit-content; box-shadow: black 0.5dvh 0.5dvh;}
 
-    .pages_links{button {width: 75%; height: 30%; box-shadow: black 1vh 1vh; span{font-size: 2.5vh;}}}
-    .bubble{top: 17.5vh; width: 10vh; height: 10vh; h2{font-size: 6vh; text-shadow: black 0 -0.25vh;} }
+    .pages_links{button {width: 75%; height: 30%; box-shadow: black 1dvh 1dvh; span{font-size: 2.5dvh;}}}
+    .bubble{top: 17.5dvh; width: 10dvh; height: 10dvh; h2{font-size: 6dvh; text-shadow: black 0 -0.25dvh;} }
 
     .footer
     {
         .table
-        {height: 6.2vh;}
+        {height: 6.2dvh;}
         .laptop, .coffee
-        {bottom: 6vh; filter: drop-shadow(0 1vh 1vh black);}
+        {bottom: 6dvh; filter: drop-shadow(0 1dvh 1dvh black);}
         .laptop
-        {width: 25vh;}
+        {width: 25dvh;}
         .coffee
-        {width: 7.5vh; right: 5vh; }    
+        {width: 7.5dvh; right: 5dvh; }    
         .smoke
-        {width: 5vh; right: 7vh; bottom: 14vh;}
+        {width: 5dvh; right: 7dvh; bottom: 14dvh;}
         .laptop_contact
         {
-            width: 12.5vh; 
-            height: 4vh;
-            left: 6vh; 
-            bottom: calc(6vh + ((25vh/1.689744191504342)/2));
+            width: 12.5dvh; 
+            height: 4dvh;
+            left: 6dvh; 
+            bottom: calc(6dvh + ((25dvh/1.689744191504342)/2));
             position: absolute;
-            box-shadow: black 0.5vh 0.5vh;
+            box-shadow: black 0.5dvh 0.5dvh;
             span
-            {font-size: calc(5px + 1.5vh);}
+            {font-size: calc(5px + 1.5dvh);}
         }}
     .return
     {
-        width: fit-content; height: fit-content; position: absolute; bottom: 22.5vh; box-shadow: black 0.5vh 0.5vh; transform: skewX(0deg);
-        span{font-size: 2.5vh; transform: skewX(0deg);}
+        width: fit-content; height: fit-content; position: absolute; bottom: 22.5dvh; box-shadow: black 0.5dvh 0.5dvh; transform: skewX(0deg);
+        span{font-size: 2.5dvh; transform: skewX(0deg);}
     }
 
-    .desc > p {margin-left: 1vh; margin-right: 1vh; font-size: 1.75vh;}
+    .desc > p {margin-left: 1dvh; margin-right: 1dvh; font-size: 1.75dvh;}
     .front_end, .back_end
-    {padding-left: 2.5vh;}
+    {padding-left: 2.5dvh;}
     span > object
-    {width: 3vh; padding-right: 1vh;}
+    {width: 3dvh; padding-right: 1dvh;}
 
-    .resume{top: 5vh; font-size: 1.75vh;}
-    .stage_tattoo{top: 10vh;}
+    .resume{top: 5dvh; font-size: 1.75dvh;}
+    .stage_tattoo{top: 10dvh;}
     .stage_tattoo > h3
-    {font-size: 2.4vh;}
+    {font-size: 2.4dvh;}
     .stage_tattoo > ul
     { max-width: 85vw;}
 
-    article.projects{width: 90vw; column-gap: 2vh; row-gap: 2vh; top: -15vh;}
-    article.projects div{font-size: 3vh;}
+    article.projects{width: 90vw; column-gap: 2dvh; row-gap: 2dvh; top: -15dvh;}
+    article.projects div{font-size: 3dvh;}
 
-    .contact_desc{font-size: 3vh; top: 5vh; position: relative;}
-    .contact_link{font-size: 3vh; row-gap: 4vh; top: 7.5vh; position: relative;}
-    .contact_link span{font-size: 2.4vh;}
-    .contact_link i{font-size: 5vh; color: var(--primary-font);}
+    .contact_desc{font-size: 3dvh; top: 5dvh; position: relative;}
+    .contact_link{font-size: 3dvh; row-gap: 4dvh; top: 7.5dvh; position: relative;}
+    .contact_link span{font-size: 2.4dvh;}
+    .contact_link i{font-size: 5dvh; color: var(--primary-font);}
 }
 
 @media (orientation: landscape)
