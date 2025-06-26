@@ -3,3 +3,14 @@
 <object data="/ressources/smoke.svg" class="smoke"></object>
 <object data="/ressources/103705e6-cb94-479b-b2e2-637a94aae0dd.svg" class="coffee"></object>
 <div class="table"></div>
+
+<script>
+    if(location.href.includes("contact"))
+{
+    var contact_bttn = $(".laptop_contact span");
+    contact_bttn.text("Vous y êtes");
+    fsize = contact_bttn.css("font-size");
+    contact_bttn.css("font-size", `calc(${fsize} * 0.90)`);
+    (contact_bttn.parent()).on("click", (e)=>{e.preventDefault()})
+}
+</script>

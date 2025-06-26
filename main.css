@@ -212,7 +212,7 @@ article.projects div
     article.projects div
     {font-size: 3vh;}
     .contact_desc{font-size: 3vh; top: 5vh; position: relative;}
-    .contact_link{font-size: 3vh; row-gap: 2vh; top: 7.5vh; position: relative;}
+    .contact_link{font-size: 3vh; row-gap: 4vh; top: 7.5vh; position: relative;}
     .contact_link i{font-size: 5vh; color: var(--primary-font);}
 }
 
