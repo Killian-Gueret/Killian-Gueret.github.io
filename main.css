@@ -19,7 +19,7 @@
     font-style: normal;
 }
 body
-{ width: 100vw; height: 100%; background-color: var(--primary-background); overflow-x: hidden;}
+{ width: 100vw; height: 100%; background-color: var(--primary-background); overflow: hidden;}
 h1
 {font-family: "Zilla Slab";color: var(--primary-background); background-color: var(--primary-font);}
 .footer
@@ -92,7 +92,7 @@ h2, h3
 
 .left_title { right: 0; position: absolute;}
 .desc {position: absolute; left : 0 ; top: 0 ; bottom: 10vh ; right: 0 ; margin: auto; width: fit-content; height: fit-content;}
-.desc > p {color: var(--primary-font); font-family: "Zilla Slab Highlight"; font-weight: 800; margin-left: 1vh; margin-right: 1vh;}
+.desc > p {color: var(--primary-background); font-family: "Zilla Slab"; font-weight: 800; background-color: var(--primary-font); width: fit-content; height: fit-content;}
 .desc > p:nth-child(2n) {text-align: right;}
 
 /*P// - Skills page */
@@ -143,32 +143,21 @@ article.projects div
 
 /*P/ - Contact */
 
-.contact_desc
-{
-    font-family: "Zilla Slab Highlight"; color: var(--primary-font); font-weight: 800;
-}
-.contact_link
-{
-    justify-items: center;
-}
-.contact_link span
-{
-    grid-column: 1 / span 2; 
-}
-
+.contact_desc{font-family: "Zilla Slab Highlight"; color: var(--primary-font); font-weight: 800;}
+.contact_link{justify-items: center;}
+.contact_link span{grid-column: 1 / span 2; }
 
 /*NOTE - RESPONSIVE MOBILE */
 
 @media (orientation: portrait)
 {
-    h1
-    {font-size: 3vh;}
-    h1, h2:not(div h2), h3:not(article h3)
-    { width: fit-content; height: fit-content; box-shadow: black 0.5vh 0.5vh;}
-    .pages_links
-    {button {width: 75%; height: 30%; box-shadow: black 1vh 1vh; span{font-size: 2.5vh;}}}
-    .bubble
-    {top: 17.5vh; width: 10vh; height: 10vh; h2{font-size: 6vh; text-shadow: black 0 -0.25vh;} }
+    h1{font-size: 3vh;}h2{font-size: 2.75vh;}h3{font-size: 2.25vh;}
+    div > span, ul, ul li{font-size: 2vh;}
+    h1, h2:not(div h2), h3:not(article h3){ width: fit-content; height: fit-content; box-shadow: black 0.5vh 0.5vh;}
+
+    .pages_links{button {width: 75%; height: 30%; box-shadow: black 1vh 1vh; span{font-size: 2.5vh;}}}
+    .bubble{top: 17.5vh; width: 10vh; height: 10vh; h2{font-size: 6vh; text-shadow: black 0 -0.25vh;} }
+
     .footer
     {
         .table
@@ -186,67 +175,110 @@ article.projects div
             width: 12.5vh; 
             height: 4vh;
             left: 6vh; 
-            bottom: 12.5vh;
+            bottom: calc(6vh + ((25vh/1.689744191504342)/2));
             position: absolute;
             box-shadow: black 0.5vh 0.5vh;
             span
-            {font-size: 2.5vh;}
+            {font-size: calc(5px + 1.5vh);}
         }}
     .return
     {
         width: fit-content; height: fit-content; position: absolute; bottom: 22.5vh; box-shadow: black 0.5vh 0.5vh; transform: skewX(0deg);
         span{font-size: 2.5vh; transform: skewX(0deg);}
     }
+
+    .desc > p {margin-left: 1vh; margin-right: 1vh; font-size: 1.75vh;}
     .front_end, .back_end
     {padding-left: 2.5vh;}
     span > object
     {width: 3vh; padding-right: 1vh;}
+
     .resume{top: 5vh; font-size: 1.75vh;}
     .stage_tattoo{top: 10vh;}
     .stage_tattoo > h3
     {font-size: 2.4vh;}
     .stage_tattoo > ul
     { max-width: 85vw;}
-    article.projects
-    {width: 90vw; column-gap: 2vh; row-gap: 2vh; top: -15vh;}
-    article.projects div
-    {font-size: 3vh;}
+
+    article.projects{width: 90vw; column-gap: 2vh; row-gap: 2vh; top: -15vh;}
+    article.projects div{font-size: 3vh;}
+
     .contact_desc{font-size: 3vh; top: 5vh; position: relative;}
     .contact_link{font-size: 3vh; row-gap: 4vh; top: 7.5vh; position: relative;}
+    .contact_link span{font-size: 2.4vh;}
     .contact_link i{font-size: 5vh; color: var(--primary-font);}
 }
 
 @media (orientation: landscape)
 {
-    h1
-    { font-size: 2vw;  width: fit-content; height: fit-content; box-shadow: black 0.5vw 0.5vh;}
-    .pages_links
-    {button {width: 75%; height: 30%; box-shadow: black 1vh 1vh; span{font-size: 2.5vh;}}}
-    .bubble
-    {top: 17.5vh; width: 6.5vw; height: 6.5vw; h2{font-size: 4.5vw; text-shadow: black 0 -0.25vw;} }
+    h2{font-size: calc(10px + 1.5vw);} h3{font-size: calc(10px + 1vw);}
+    div > span, ul, ul li{font-size: calc(10px + 0.75vw); height: fit-content;}
+    h1 { font-size: (10px + 1.75vw);  width: fit-content; height: fit-content; box-shadow: black 0.5vw 0.5vw;}
+    .pages_links{button {width: 55%; height: 35%; box-shadow: black 1vh 1vh; span{font-size: calc(10px + 2.25vw);}}}
+    .bubble{top: 17.5vh; width: calc(10px + 6.25vw); height: calc(10px + 6.25vw); h2{font-size: calc(10px + 4vw); text-shadow: black 0 -0.25vw;} }
+
     .footer
     {
         .table
         {height: 6.2vh;}
         .laptop, .coffee
-        {bottom: 6vh; filter: drop-shadow(0 1vh 1vh black);}
+        {bottom: 6vh; filter: drop-shadow(0 1vw 1vw black);}
         .laptop
-        {width: 25vh;}
+        {width: 17.5vw;}
         .coffee
-        {width: 7.5vh; right: 5vh; }    
+        {width: 5vw; right: 5vw;}    
         .smoke
-        {width: 5vh; right: 7vh; bottom: 14vh;}
+        {width: 3.5vw; right: 6.5vw; bottom: calc(6vh + 5vw);}
         .laptop_contact
         {
-            width: 12.5vh; 
-            height: 4vh;
-            left: 6vh; 
-            bottom: 12.5vh;
+            width: 9vw; 
+            height: 2.5vw;
+            left: 4.25vw; 
+            bottom: calc(6vh + ((17.5vw/1.689744191504342)/2));
             position: absolute;
-            box-shadow: black 0.5vh 0.5vh;
+            box-shadow: black 0.5vw 0.5vw;
             span
-            {font-size: 2.5vh;}
+            {font-size: calc(5px + 1vw);}
         }}
+    
+    
+    .left_title { position: relative;}
+    .return
+    {
+        width: fit-content; height: fit-content; position: absolute; bottom: 30vh; box-shadow: black 0.5vw 0.5vw; transform: skewX(0deg);
+        span{font-size: 2vw; transform: skewX(0deg);}
+    }
+    .desc > p {margin-left:15vw; margin-right:15vw; font-size: calc(10px + 1vw);}
+
+    .competences_box
+    {
+        display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 3fr 1fr 3fr;
+        position: absolute; left : 0 ; top: 0 ; bottom: 0 ; right: 0 ; margin: auto;
+        width: 50vw; height: 75vh; align-items: center;
+    }
+    .front_title, .back_title{grid-row:1;}
+    .soft_title, .tools_title{grid-row:3}
+    div, .soft_skills, .tools
+    {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto; align-items: center;
+    }
+    ul {columns: 2; font-family: "Zilla Slab Highlight"; color: var(--primary-font) ; font-weight: 1000;}
+    ul > li > i{color: black; left: 0vw;}
+    li{list-style-type: none; list-style-position:outside; margin:0; padding:0;}
+    .icon {width: 2vw; padding-right: 1vh;}
+
+    .resume
+    {font-size: calc(10px + 0.75vw); width: 75vw;}
+
+    article.projects{width: 90vw; column-gap: 2vw; row-gap: 4vh; top: -15vh;}
+    article.projects div{font-size: calc(10px + 2.5vw); width: 25vw; height: 12.5vh;}
+    
+    .contact_desc{font-size: calc(10px + 0.75vw); top: 5vh; position: relative; padding-right: 5vw;}
+    .contact_link{font-size: calc(10px + 1.5vw); row-gap: 4vh; top: 15vh; position: relative; width: 45vw; left : 0 ; bottom: 0 ; right: 0 ; margin: auto;}
+    .contact_link span{font-size: calc(10px + 1.5vw);}
+    .contact_link i{font-size: calc(10px + 2.5vw); color: var(--primary-font);}
 }
 
 /*SECTION2 - Hover/Animation */
