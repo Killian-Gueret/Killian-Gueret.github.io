@@ -6,6 +6,17 @@
     --secondary-background : #f5f5f5 ;
 }
 
+@font-face {
+    font-family: "Zilla Slab Highlight", serif;
+    src: url("/ressources/Zilla_Slab_Highlight/ZillaSlabHighlight-Regular.ttf");
+    font-style: normal;
+}
+@font-face {
+    font-family: "Zilla Slab", serif;
+    src: url("/ressources/Zilla_Slab/ZillaSlab-Regular.ttf");
+    font-style: normal;
+}
+
 /* * {border: 2px red inset} */
 
 .zilla-slab-highlight-bold {
@@ -16,17 +27,6 @@
 .zilla-slab-regular {
     font-family: "Zilla Slab", serif;
     font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Zilla Slab Highlight";
-    src: url("/ressources/Zilla_Slab_Highlight/ZillaSlabHighlight-Regular.ttf");
-    font-style: normal;
-}
-@font-face {
-    font-family: "Zilla Slab";
-    src: url("/ressources/Zilla_Slab/ZillaSlab-Regular.ttf");
     font-style: normal;
 }
 
