@@ -21,13 +21,13 @@
 
 @font-face {
     font-family: "Zilla Slab Highlight";
-    src: "/ressources/Zilla_Slab_Highlight/ZillaSlabHighlight-Regular.ttf";
+    src: url("/ressources/Zilla_Slab_Highlight/ZillaSlabHighlight-Regular.ttf");
     font-weight: 700;
     font-style: normal;
 }
 @font-face {
     font-family: "Zilla Slab";
-    src: "/ressources/Zilla_Slab/ZillaSlab-Regular.ttf";
+    src: url("/ressources/Zilla_Slab/ZillaSlab-Regular.ttf");
     font-weight: 400;
     font-style: normal;
 }
