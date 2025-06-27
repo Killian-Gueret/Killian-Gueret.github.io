@@ -8,7 +8,7 @@
 
 /* * {border: 2px red inset} */
 
-/* .zilla-slab-highlight-bold {
+.zilla-slab-highlight-bold {
     font-family: "Zilla Slab Highlight", serif;
     font-weight: 700;
     font-style: normal;
@@ -17,7 +17,7 @@
     font-family: "Zilla Slab", serif;
     font-weight: 400;
     font-style: normal;
-} */
+}
 
 @font-face {
     font-family: "Zilla Slab Highlight";
