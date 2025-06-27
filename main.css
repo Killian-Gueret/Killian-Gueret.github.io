@@ -7,13 +7,20 @@
 }
 
 @font-face {
-    font-family: "Zilla Slab Highlight", serif;
-    src: url("/ressources/Zilla_Slab_Highlight/ZillaSlabHighlight-Regular.ttf");
+    font-family: "Zilla Slab Highlight";
+    src: url("/ressources/Zilla_Slab_Highlight/ZillaSlabHighlight-Regular.ttf"),
+        url("/ressources/Zilla_Slab_Highlight/ZillaSlabHighlight-Bold.ttf");
+    font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: "Zilla Slab", serif;
-    src: url("/ressources/Zilla_Slab/ZillaSlab-Regular.ttf");
+    font-family: "Zilla Slab";
+    src: url("/ressources/Zilla_Slab/ZillaSlab-Regular.ttf"),
+        url("/ressources/Zilla_Slab/ZillaSlab-Bold.ttf"),
+        url("/ressources/Zilla_Slab/ZillaSlab-Medium.ttf"),
+        url("/ressources/Zilla_Slab/ZillaSlab-SemiBold.ttf"),
+        url("/ressources/Zilla_Slab/ZillaSlab-Light.ttf");
+    font-weight: normal;
     font-style: normal;
 }
 
