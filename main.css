@@ -38,17 +38,17 @@
 }
 @font-face {
     font-family: "Zilla Slab Highlight";
-    src: url("/ressources/Zilla_Slab_Highlight/ZillaSlabHighlight-Regular.ttf");
+    src: url("/ressources/Zilla_Slab_Highlight/ZillaSlabHighlight-Bold.ttf");
     font-weight: 700;
     font-style: normal;
-    font-display: swap
+    font-display: swap;
 }
 @font-face {
     font-family: "Zilla Slab";
     src:url("/ressources/Zilla_Slab/ZillaSlab-Regular.ttf");
     font-weight: 400;
     font-style: normal;
-    font-display: swap
+    font-display: swap;
 }
 
 body
@@ -238,7 +238,10 @@ article.projects div
     }
 
     .desc > p {margin-left: 1dvh; margin-right: 1dvh; font-size: 1.75dvh;}
-    .front_end, .back_end {padding-left: 2.5dvh;}
+    .front_end, .back_end
+    {
+        padding-left: 2.5dvh; width: 95vw; 
+        align-items: center; align-content: center; align-self: center;}
     span > object {width: 3dvh; padding-right: 1dvh;}
 
     .resume{top: 5dvh; font-size: 1.75dvh;}
