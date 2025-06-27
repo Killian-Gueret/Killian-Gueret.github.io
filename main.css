@@ -1,59 +1,86 @@
-:root
+@media (prefers-color-scheme: dark)
 {
-    --primary-font : #f5c000 ;
-    --primary-background : #313131 ;
-    --secondary-font : #74008b ;
-    --secondary-background : #f5f5f5 ;
+    :root
+    {
+        --primary-font : #f5c000 ;
+        --primary-background : #313131 ;
+    }
+    .laptop, .smoke, .coffee
+    {
+        @media (orientation: portrait)
+        {
+            filter: invert(66%) sepia(73%) saturate(1185%) hue-rotate(1deg) brightness(106%) contrast(109%) drop-shadow(0 1dvh 1dvh black);
+        }
+        @media (orientation: landscape)
+        {
+            filter: invert(66%) sepia(73%) saturate(1185%) hue-rotate(1deg) brightness(106%) contrast(109%) drop-shadow(0 1vw 1vw black);
+        }
+    }
 }
-
+@media (prefers-color-scheme: light)
+{
+    :root
+    {
+        --primary-font : #74008b ;
+        --primary-background : #f5f5f5 ;
+    }
+    .laptop, .smoke, .coffee
+    {
+        @media (orientation: portrait)
+        {
+            filter: invert(18%) sepia(77%) saturate(4775%) hue-rotate(285deg) brightness(60%) contrast(128%) drop-shadow(0 1dvh 1dvh black);
+        }
+        @media (orientation: landscape)
+        {
+            filter: invert(18%) sepia(77%) saturate(4775%) hue-rotate(285deg) brightness(60%) contrast(128%) drop-shadow(0 1vw 1vw black);
+        }
+    }
+}
 @font-face {
     font-family: "Zilla Slab Highlight";
-    src: url("/ressources/Zilla_Slab_Highlight/ZillaSlabHighlight-Regular.ttf"),
-        url("/ressources/Zilla_Slab_Highlight/ZillaSlabHighlight-Bold.ttf");
-    font-weight: normal;
+    src: url("/ressources/Zilla_Slab_Highlight/ZillaSlabHighlight-Regular.ttf");
+    font-weight: 700;
     font-style: normal;
 }
 @font-face {
     font-family: "Zilla Slab";
-    src: url("/ressources/Zilla_Slab/ZillaSlab-Regular.ttf"),
-        url("/ressources/Zilla_Slab/ZillaSlab-Bold.ttf"),
-        url("/ressources/Zilla_Slab/ZillaSlab-Medium.ttf"),
-        url("/ressources/Zilla_Slab/ZillaSlab-SemiBold.ttf"),
-        url("/ressources/Zilla_Slab/ZillaSlab-Light.ttf");
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* * {border: 2px red inset} */
-
-.zilla-slab-highlight-bold {
-    font-family: "Zilla Slab Highlight", serif;
-    font-weight: 700;
-    font-style: normal;
-}
-.zilla-slab-regular {
-    font-family: "Zilla Slab", serif;
+    src:url("/ressources/Zilla_Slab/ZillaSlab-Regular.ttf");
     font-weight: 400;
     font-style: normal;
 }
 
 body
-{ width: 100vw; height: 100%; background-color: var(--primary-background); overflow: hidden;}
+{ 
+    width: fit-content; height: fit-content; 
+    background-color: var(--primary-background); 
+    overflow: hidden; scrollbar-width: none; 
+}
+body::-webkit-scrollbar {display: none;}
+
 h1
-{font-family: "Zilla Slab";color: var(--primary-background); background-color: var(--primary-font);}
+{
+    font-family: "Zilla Slab"; color: var(--primary-background); 
+    background-color: var(--primary-font);
+}
+h2, h3
+{
+    font-family: "Zilla Slab Highlight"; color: var(--primary-font) ; 
+    width: fit-content; height: fit-content;
+}
 .footer
 {
-    width: 100%;
+    width: fit-content;
     right: 0;
     bottom: 0;
+    margin: 0;
+    left: 0;
     position: fixed;
-    .table
-    {background-color: var(--primary-font); width: 100vw;}
-    .laptop, .coffee, .smoke, .laptopContact
-    {position: absolute;}
+    .table {background-color: var(--primary-font); width: 100vw;}
+    .laptop, .coffee, .smoke, .laptopContact {position: absolute; fill: var(--primary-font)}
     .laptop_contact
     {
-        color:var(--primary-background); display: flex; justify-content: center; align-items: center; text-decoration: none; background-color: var(--primary-font) ; transform: skewX(-25deg);
+        color:var(--primary-background); display: flex; justify-content: center; align-items: center; text-decoration: none; background-color: var(--primary-font) ; 
+        transform: skewX(-25deg);
         span{transform: skewX(25deg); display: block; font-family:"Zilla Slab" ; font-weight: 700;}
     }
 }
@@ -77,8 +104,6 @@ button
             transform: skewX(25deg);
         }
 }
-h2, h3
-{font-family: "Zilla Slab Highlight"; color: var(--primary-font) ; width: fit-content; height: fit-content;}
 
 /*ANCHOR - Home page */
 
@@ -110,8 +135,16 @@ h2, h3
 /*P/ - About page */
 
 .left_title { right: 0; position: absolute;}
-.desc {position: absolute; left : 0 ; top: 0 ; bottom: 10dvh ; right: 0 ; margin: auto; width: fit-content; height: fit-content;}
-.desc > p {color: var(--primary-background); font-family: "Zilla Slab"; font-weight: 800; background-color: var(--primary-font); width: fit-content; height: fit-content;}
+.desc 
+{
+    position: absolute; left : 0 ; top: 0 ; bottom: 10dvh ; right: 0 ; 
+    margin: auto; width: fit-content; height: fit-content;
+}
+.desc > p
+{
+    color: var(--primary-background); font-family: "Zilla Slab"; font-weight: 800; 
+    background-color: var(--primary-font); width: fit-content; height: fit-content;
+}
 .desc > p:nth-child(2n) {text-align: right;}
 
 /*P// - Skills page */
@@ -130,11 +163,11 @@ div > span
     font-family: "Zilla Slab Highlight"; color: var(--primary-font) ; font-weight: 1000;
 }
 ul
-{columns: 2; font-family: "Zilla Slab Highlight"; color: var(--primary-font) ; font-weight: 1000;}
-ul > li > i
-{color: black; left: 0vw;}
-li
-{list-style-type: none; list-style-position:outside; margin:0; padding:0;}
+{
+    columns: 2; 
+    font-family: "Zilla Slab Highlight"; color: var(--primary-font) ; font-weight: 1000;}
+ul > li > i {color: black; left: 0vw;}
+li {list-style-type: none; list-style-position:outside; margin:0; padding:0;}
 
 /*P/// - Experiences page */
 
@@ -179,45 +212,37 @@ article.projects div
 
     .footer
     {
-        .table
-        {height: 6.2dvh;}
-        .laptop, .coffee
-        {bottom: 6dvh; filter: drop-shadow(0 1dvh 1dvh black);}
-        .laptop
-        {width: 25dvh;}
-        .coffee
-        {width: 7.5dvh; right: 5dvh; }    
-        .smoke
-        {width: 5dvh; right: 7dvh; bottom: 14dvh;}
+        .table {height: 4.2dvh;}
+        .laptop, .coffee {bottom: 4dvh;}
+        .laptop {width: 25dvh;}
+        .coffee {width: 7.5dvh; right: 5dvh;}    
+        .smoke {width: 5dvh; right: 7dvh; bottom: 12dvh;}
         .laptop_contact
         {
             width: 12.5dvh; 
             height: 4dvh;
             left: 6dvh; 
-            bottom: calc(6dvh + ((25dvh/1.689744191504342)/2));
+            bottom: calc(4dvh + ((25dvh/1.689744191504342)/2));
             position: absolute;
             box-shadow: black 0.5dvh 0.5dvh;
             span
             {font-size: calc(5px + 1.5dvh);}
-        }}
+        }
+    }
     .return
     {
-        width: fit-content; height: fit-content; position: absolute; bottom: 22.5dvh; box-shadow: black 0.5dvh 0.5dvh; transform: skewX(0deg);
+        width: fit-content; height: fit-content; position: absolute; bottom: 20.5dvh; box-shadow: black 0.5dvh 0.5dvh; transform: skewX(0deg);
         span{font-size: 2.5dvh; transform: skewX(0deg);}
     }
 
     .desc > p {margin-left: 1dvh; margin-right: 1dvh; font-size: 1.75dvh;}
-    .front_end, .back_end
-    {padding-left: 2.5dvh;}
-    span > object
-    {width: 3dvh; padding-right: 1dvh;}
+    .front_end, .back_end {padding-left: 2.5dvh;}
+    span > object {width: 3dvh; padding-right: 1dvh;}
 
     .resume{top: 5dvh; font-size: 1.75dvh;}
     .stage_tattoo{top: 10dvh;}
-    .stage_tattoo > h3
-    {font-size: 2.4dvh;}
-    .stage_tattoo > ul
-    { max-width: 85vw;}
+    .stage_tattoo > h3 {font-size: 2.4dvh;}
+    .stage_tattoo > ul { max-width: 85vw;}
 
     article.projects{width: 90vw; column-gap: 2dvh; row-gap: 2dvh; top: -15dvh;}
     article.projects div{font-size: 3dvh;}
@@ -232,22 +257,23 @@ article.projects div
 {
     h2{font-size: calc(5px + 1.75vw);} h3{font-size: calc(5px + 1.25vw);}
     div > span, ul, ul li{font-size: calc(5px + 1vw); height: fit-content;}
-    h1 { font-size: (5px + 2vw);  width: fit-content; height: fit-content; box-shadow: black 0.5vw 0.5vw;}
-    .pages_links{button {width: 55%; height: 35%; box-shadow: black 1vh 1vh; span{font-size: calc(5px + 2.5vw);}}}
+    h1 {font-size: calc(5px + 2vw);  width: fit-content; height: fit-content; box-shadow: black 0.5vw 0.5vw;}
+    .pages_links
+    {
+        button 
+        {width: 55%; height: 35%; box-shadow: black 1vh 1vh; 
+            span{font-size: calc(5px + 2.5vw);}
+        }
+    }
     .bubble{top: 17.5vh; width: calc(5px + 6.5vw); height: calc(5px + 6.5vw); h2{font-size: calc(5px + 4.25vw); text-shadow: black 0 -0.25vw;} }
 
     .footer
     {
-        .table
-        {height: 6.2vh;}
-        .laptop, .coffee
-        {bottom: 6vh; filter: drop-shadow(0 1vw 1vw black);}
-        .laptop
-        {width: 17.5vw;}
-        .coffee
-        {width: 5vw; right: 5vw;}    
-        .smoke
-        {width: 3.5vw; right: 6.5vw; bottom: calc(6vh + 5vw);}
+        .table {height: 6.2vh;}
+        .laptop, .coffee {bottom: 6vh}
+        .laptop {width: 17.5vw;}
+        .coffee {width: 5vw; right: 5vw;}    
+        .smoke {width: 3.5vw; right: 6.5vw; bottom: calc(6vh + 5vw);}
         .laptop_contact
         {
             width: 9vw; 
@@ -267,7 +293,7 @@ article.projects div
         width: fit-content; height: fit-content; position: absolute; bottom: 30vh; box-shadow: black 0.5vw 0.5vw; transform: skewX(0deg);
         span{font-size: 2vw; transform: skewX(0deg);}
     }
-    .desc > p {margin-left:15vw; margin-right:15vw; font-size: calc(5px + 1vw);}
+    .desc > p{margin-left:15vw; margin-right:15vw; font-size: calc(5px + 1vw);}
 
     .competences_box
     {
@@ -288,8 +314,7 @@ article.projects div
     li{list-style-type: none; list-style-position:outside; margin:0; padding:0;}
     .icon {width: 2vw; padding-right: 1vh;}
 
-    .resume
-    {font-size: calc(10px + 0.75vw); width: 75vw;}
+    .resume {font-size: calc(10px + 0.75vw); width: 75vw;}
 
     article.projects{width: 90vw; column-gap: 2vw; row-gap: 4vh; top: -15vh;}
     article.projects div{font-size: calc(10px + 2.5vw); width: 25vw; height: 12.5vh;}
