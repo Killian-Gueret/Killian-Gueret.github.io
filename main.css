@@ -90,7 +90,7 @@ button
 {
         background-color: var(--primary-font);
         border: none; transform: skewX(-25deg);
-
+        cursor: pointer;
         a
         {
             width: inherit;
@@ -325,9 +325,7 @@ article.projects div
     article.projects div{font-size: calc(10px + 2.5vw); width: 25vw; height: 12.5vh;}
     
     .contact_desc{font-size: calc(10px + 0.75vw); top: 5vh; position: relative; padding-right: 5vw;}
-    .contact_link{font-size: calc(10px + 1.5vw); row-gap: 4vh; top: 15vh; position: relative; width: 45vw; left : 0 ; bottom: 0 ; right: 0 ; margin: auto;}
+    .contact_link{font-size: calc(10px + 1.5vw); row-gap: 4vh; top: -5vh; position: absolute; width: 45vw; height: 20vh; left : 0 ; bottom: 0 ; right: 0 ; margin: auto;}
     .contact_link span{font-size: calc(10px + 1.5vw);}
     .contact_link i{font-size: calc(10px + 2.5vw); color: var(--primary-font);}
 }
-
-/*SECTION2 - Hover/Animation */
