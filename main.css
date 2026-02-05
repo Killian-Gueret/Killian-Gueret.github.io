@@ -174,10 +174,10 @@ li {list-style-type: none; list-style-position:outside; margin:0; padding:0;}
 /*P/// - Experiences page */
 
 .resume{font-family: "Zilla Slab Highlight"; font-weight: 1000; color:var(--primary-font); position: relative;}
-.stage_tattoo{position: relative;}
-.stage_tattoo ul{columns: 1; box-sizing: content-box;}
-.stage_tattoo li {list-style-type: disc; text-wrap: wrap;}
-.stage_tattoo li::marker {color:black}
+.exp{position: relative;}
+.exp ul{columns: 1; box-sizing: content-box;}
+.exp li {list-style-type: disc; text-wrap: wrap;}
+.exp li::marker {color:black}
 
 /*SECTION - Projects page */
 
