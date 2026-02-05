@@ -147,7 +147,7 @@ button
     color: var(--primary-background); font-family: "Zilla Slab"; font-weight: 800; 
     background-color: var(--primary-font); width: fit-content; height: fit-content;
 }
-.desc > p:nth-child(2n) {text-align: right;}
+/* .desc > p:nth-child(2n) {text-align: right;} */
 
 /*P// - Skills page */
 
